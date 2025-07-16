@@ -1,0 +1,142 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(187deg, #D470FF 4.25%, #EE42FE 121.46%);
+}
+
+h1{
+  font-family: "dystopian", sans-serif; 
+  font-weight: 900; 
+  font-style: normal;
+  font-size: 70px;
+  margin: 37px;
+}
+
+h2{
+  font-family: "dystopian", sans-serif; 
+  font-weight: 700; 
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+}
+
+p{
+  font-family: "dystopian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+button{
+  background: linear-gradient(186deg, rgba(251, 255, 180, 0.66) 4.68%, rgba(249, 237, 114, 0.66) 51.38%, rgba(255, 204, 0, 0.66) 82.67%, rgba(253, 32, 228, 0.66) 99.48%), linear-gradient(180deg, #FAFF9B 73.75%, #F09 120.75%);
+  padding: 5.462px 19.118px;
+  font-family: "source-code-pro", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  border-radius: 17px 17px 17px 25px;
+}
+
+nav{
+  background-color: #B44CFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.41);
+  border: 3px solid #000;
+  height: 60px;
+}
+
+.navbar-logo{
+  width: 60px;
+  padding-left: 5px;
+}
+
+.navbar-links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-links a{
+  color: #FAFF9B;
+  padding: 0px 20px 0px 20px;
+  font-family: "source-code-pro", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 80px;
+}
+
+.headers h1{
+  margin: 0;
+}
+
+.skills{
+  margin-top: 130px;
+}
+
+.skills-header{
+  margin: 0 0 30px 0;
+}
+
+.skills-description{
+  display: inline-block;
+  align-items: center;
+}
+
+.skills-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 285px;
+}
+
+.skills-icons{
+  width: 350px;
+}
+
+.featured-projects{
+  margin-top: 130px;
+  text-align: center;
+}
+
+.project-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.project-window{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+.project-image{
+  height: 150px;
+}
+
+.project-image-two{
+  height: 200px;
+}
+
+.project-image-three{
+  height: 140px;
+}
+
+footer{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+}

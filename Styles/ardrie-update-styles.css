@@ -1,0 +1,98 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(187deg, #D470FF 4.25%, #EE42FE 121.46%);
+}
+
+h1{
+  font-family: "dystopian", sans-serif; 
+  font-weight: 900; 
+  font-style: normal;
+  font-size: 70px;
+}
+
+p{
+  font-family: "dystopian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+button{
+  background: linear-gradient(186deg, rgba(251, 255, 180, 0.66) 4.68%, rgba(249, 237, 114, 0.66) 51.38%, rgba(255, 204, 0, 0.66) 82.67%, rgba(253, 32, 228, 0.66) 99.48%), linear-gradient(180deg, #FAFF9B 73.75%, #F09 120.75%);
+  padding: 5.462px 19.118px;
+  font-family: "source-code-pro", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  border-radius: 17px 17px 17px 25px;
+}
+
+nav{
+  background-color: #B44CFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.41);
+  border: 3px solid #000;
+  height: 60px;
+}
+
+.navbar-logo{
+  width: 60px;
+  padding-left: 5px;
+}
+
+.navbar-links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-links a{
+  color: #FAFF9B;
+  padding: 0px 20px 0px 20px;
+  font-family: "source-code-pro", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-wrapper{
+  align-self: flex-end;
+  margin: 20px;
+}
+
+.ardrie-image{
+  margin-top: 100px;
+  width: 200px;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);   
+  gap: 1rem; 
+  max-width: 400px; 
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.tab{
+  background: linear-gradient(148deg, #200405 47.85%, #DD00A6 125.64%), #000;
+  color: yellow;
+}
+
+footer{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+}
