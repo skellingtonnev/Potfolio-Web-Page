@@ -116,23 +116,23 @@ header{
 }
 
 .project-window{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
+  display: inline-block;
+  width: 300px;
+}
+
+.project-image-container{
+  height: 150px;
+  margin-bottom: 20px;
 }
 
 .project-image{
-  height: 150px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
 }
 
-.project-image-two{
-  height: 200px;
-}
-
-.project-image-three{
-  height: 140px;
+.image-one{
+  object-fit: cover;
 }
 
 footer{
