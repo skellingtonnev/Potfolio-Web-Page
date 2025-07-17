@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: linear-gradient(187deg, #D470FF 4.25%, #EE42FE 121.46%);
+  background: url("../Images/Project Background.png") lightgray 50% / cover no-repeat;
 }
 
 h1{
@@ -34,6 +34,73 @@ button{
   font-style: normal;
   font-size: 18px;
   border-radius: 17px 17px 17px 25px;
+}
+
+.text-stack {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.text-one {
+  z-index: 4;
+  background: linear-gradient(180deg, #FAFF9B 50%, #F09 140%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: hard-light;
+}
+
+.text-two {
+  z-index: 3;
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: #000;
+  background: linear-gradient(180deg, #FAFF9B 50%, #F09 140%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-three {
+  z-index: 2;
+  -webkit-text-stroke-width: 2.93px;
+  -webkit-text-stroke-color: #972F9A;
+  background: url("../Images/Landing Page/Shiny.jpg") lightgray 50% / cover no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: hue;
+  transform: translate(-49%, 1px); /* right and down */
+  left: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.text-four {
+  z-index: 1;
+  opacity: 0.4;
+  background: url("../Images/Landing Page/Shiny.jpg") lightgray 50% / cover no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: multiply;
+  transform: translate(-51%, -1px); /* left and up */
+  left: 50%;
+  position: absolute;
+  top: 0;
 }
 
 nav{
@@ -87,16 +154,34 @@ main{
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: repeat(3, 1fr);   
-  gap: 1rem; 
+  gap: 60px; 
   max-width: 400px; 
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 50px;
+  
 }
 
 .tab{
   background: linear-gradient(148deg, #200405 47.85%, #DD00A6 125.64%), #000;
-  color: yellow;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "dystopian", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.gradient-text {
+  background: var(--yellowgradient, linear-gradient(180deg, #FAFF9B 60.75%, #F09 100.75%));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer{
