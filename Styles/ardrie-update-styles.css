@@ -11,6 +11,14 @@ h1{
   font-size: 70px;
 }
 
+h2{
+  font-family: "dystopian", sans-serif; 
+  font-weight: 700; 
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+}
+
 p{
   font-family: "dystopian", sans-serif;
   font-weight: 400;
