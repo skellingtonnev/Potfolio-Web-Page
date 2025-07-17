@@ -1,12 +1,16 @@
-body{
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(187deg, #D470FF 4.25%, #EE42FE 121.46%);
+html, body {
+  overflow-x: hidden;
 }
 
-h1{
-  font-family: "dystopian", sans-serif; 
-  font-weight: 900; 
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../Images/Landing Page/Landing Page Background.png") lightgray 50% / cover no-repeat;
+}
+
+h1 {
+  font-family: "dystopian", sans-serif;
+  font-weight: 900;
   font-style: normal;
   font-size: 70px;
 }
@@ -18,14 +22,48 @@ h1{
   width: 200%;
 }
 
-.title{
+.nav-text-container{
+  width: 70px; /* fixed width to keep all nav texts the same width */
+  position: relative;
+  display: inline-block;
+  height: 27px;
+}
+
+.navtext {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.nav-one.nav-one {
+  z-index: 3;
+  color: #f2593d;
+  opacity: 0.5;
+  right: 3px;
+}
+
+.nav-two.nav-two {
+  z-index: 2;
+}
+
+.nav-three.nav-three {
+  z-index: 1;
+  font-size: 22px;
+  color: blue;
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+  top: -5px;
+  right: -10px;
+}
+
+.title {
   position: absolute;
   top: 0;
   left: 0;
   margin-bottom: 100px;
 }
 
-.text-one{
+.text-one {
   z-index: 4;
   background: linear-gradient(180deg, #FAFF9B 50%, #F09 140%);
   background-clip: text;
@@ -34,7 +72,7 @@ h1{
   mix-blend-mode: hard-light;
 }
 
-.text-two{
+.text-two {
   z-index: 3;
   -webkit-text-stroke-width: 1.7px;
   -webkit-text-stroke-color: #000;
@@ -44,8 +82,8 @@ h1{
   -webkit-text-fill-color: transparent;
 }
 
-.text-three{
-  z-index: 2; 
+.text-three {
+  z-index: 2;
   -webkit-text-stroke-width: 2.93px;
   -webkit-text-stroke-color: #972F9A;
   background: url("../Images/Landing Page/Shiny.jpg") lightgray 50% / cover no-repeat;
@@ -57,7 +95,7 @@ h1{
   top: 3px;
 }
 
-.text-four{
+.text-four {
   z-index: 1;
   opacity: 0.4;
   background: url("../Images/Landing Page/Shiny.jpg") lightgray 50% / cover no-repeat;
@@ -69,22 +107,22 @@ h1{
   top: 3px;
 }
 
-h2{
-  font-family: "dystopian", sans-serif; 
-  font-weight: 700; 
+h2 {
+  font-family: "dystopian", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 25px;
   margin: 0;
 }
 
-p{
+p {
   font-family: "dystopian", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
 }
 
-button{
+button {
   background: linear-gradient(186deg, rgba(251, 255, 180, 0.66) 4.68%, rgba(249, 237, 114, 0.66) 51.38%, rgba(255, 204, 0, 0.66) 82.67%, rgba(253, 32, 228, 0.66) 99.48%), linear-gradient(180deg, #FAFF9B 73.75%, #F09 120.75%);
   padding: 5.462px 19.118px;
   font-family: "source-code-pro", monospace;
@@ -94,37 +132,47 @@ button{
   border-radius: 17px 17px 17px 25px;
 }
 
-nav{
-  background-color: #B44CFF;
+nav {
+  background-image: url('../Images/Landing Page/Navbar Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.41);
-  border: 3px solid #000;
+  padding: 10px 20px 10px 10px;
+  box-shadow: 0px 4px 4px 0px rgba(85, 0, 255, 0.639);
+  border: 3px solid rgba(54, 0, 163, 0.639);
   height: 60px;
 }
 
-.navbar-logo{
+.navbar-logo {
   width: 60px;
   padding-left: 5px;
 }
 
-.navbar-links{
+.navbar-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end; /* keep links on the right */
+  gap: 80px; /* bigger gap to spread evenly */
+  flex-grow: 1;
+  padding-right: 20px;
 }
 
-.navbar-links a{
+.navbar-links a {
   color: #FAFF9B;
-  padding: 0px 20px 0px 20px;
+  padding: 0;          /* remove padding for equal spacing */
+  margin: 0;
   font-family: "source-code-pro", monospace;
   font-weight: 600;
   font-style: normal;
-  font-size: 18px;
+  font-size: 22px;
+  text-decoration: none;
+  display: flex;       /* keep inline flex for child alignment */
+  align-items: center;
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,47 +180,43 @@ header{
   margin-top: 80px;
 }
 
-.headers h1{
+.headers h1 {
   margin: 0;
 }
 
-.landing-image{
-
-}
-
-.skills{
+.skills {
   margin-top: 130px;
 }
 
-.skills-header{
+.skills-header {
   margin: 0 0 100px 0;
 }
 
-.skills-description{
+.skills-description {
   display: inline-block;
   align-items: center;
 }
 
-.skills-content{
+.skills-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 285px;
 }
 
-.skills-icons{
+.skills-icons {
   width: 350px;
 }
 
-.featured-projects{
+.featured-projects {
   margin-top: 130px;
   text-align: center;
 }
 
-.featured-text-container{
+.featured-text-container {
   margin-bottom: 80px;
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
 }
 
@@ -182,40 +226,47 @@ header{
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: -50px;
 }
 
 .featured-text-stack .title {
   width: 100%;
 }
 
-.project-list{
+.project-list {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 100px;
+  position: relative;
 }
 
-.project-window{
+.project-window {
   display: inline-block;
   width: 300px;
+  position: relative;
 }
 
-.project-image-container{
+.project-image-container {
   height: 150px;
   margin: 50px 0 70px 0;
+  position: relative;
 }
 
-.project-image{
+.project-image {
   width: 100%;
   height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.image-one{
+.image-one {
   object-fit: cover;
 }
 
-footer{
+footer {
   margin-top: 150px;
   margin-bottom: 100px;
   text-align: center;
