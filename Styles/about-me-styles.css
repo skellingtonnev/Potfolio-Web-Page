@@ -1,7 +1,11 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body{
   margin: 0;
   padding: 0;
-  background: linear-gradient(187deg, #D470FF 4.25%, #EE42FE 121.46%);
+  background: url("../Images/About Me Background.png") lightgray 50% / cover no-repeat;
 }
 
 h1{
