@@ -167,8 +167,14 @@ main{
   
 }
 
+.tab-container{
+  position: relative;
+  width: 200px;
+  height: 80px;
+}
+
 .tab{
-  background: linear-gradient(148deg, #200405 47.85%, #DD00A6 125.64%), #000;
+  background: transparent;
   width: 200px;
   height: 80px;
   display: flex;
@@ -178,6 +184,50 @@ main{
   font-weight: 900;
   font-style: normal;
   font-size: 20px;
+  position: absolute;
+  z-index: 15;
+  border-radius: 17px;
+}
+
+.trial-tippy-top{
+  width: 200px;
+  height: 80px;
+  background: url("../Images/Landing Page/oilmark.jpg");
+  mix-blend-mode: overlay;
+  opacity: 0.34;
+  position:absolute;
+  border-radius: 17px;
+  z-index: 14;
+}
+
+.trial-top{
+  width: 200px;
+  height: 80px;
+  border-radius: 17px;
+  border: 7px solid rgb(250, 5, 250);
+  opacity: 0.34;
+  position:absolute;
+  box-sizing: border-box;
+  z-index: 13;
+}
+
+.trial-middle{
+  width: 200px;
+  height: 80px;
+  background: linear-gradient(148deg, #200405 47.85%, #DD00A6 125.64%), #000;
+  mix-blend-mode: difference;
+  border-radius: 17px;
+  position:absolute;
+  z-index: 11;
+}
+
+.trial-bottom{
+  position:absolute;
+  width: 200px;
+  height: 80px;
+  border-radius: 17px;
+  background: linear-gradient(120deg, #F870FF -3.84%, #FE68FF 24.83%, #FF59F9 54.06%, #E752FF 79.97%, #C342FE 110.85%), linear-gradient(187deg, #F870FF 4.25%, #FE68FF 33.55%, #FF59F9 63.42%, #E752FF 89.9%, #C342FE 121.46%), linear-gradient(187deg, #F870FF 4.25%, #C342FE 121.46%), linear-gradient(43deg, #C446DC 33.52%, #F5F97B 126.8%), #C446DC;
+  z-index: 12;
 }
 
 .gradient-text {
@@ -186,7 +236,18 @@ main{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: absolute;
+  -webkit-text-stroke: 0.5px black;
 }
+
+.gradient-text-2{
+  -webkit-text-stroke: 0.5px black;
+  padding-right: 1px;
+  padding-top: 1px;
+  mix-blend-mode: darken;
+}
+
+
 
 footer{
   margin-top: 150px;
