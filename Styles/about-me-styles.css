@@ -32,13 +32,15 @@ p{
 
 button {
   background: linear-gradient(186deg, rgba(251, 255, 180, 0.66) 4.68%, rgba(249, 237, 114, 0.66) 51.38%, rgba(255, 204, 0, 0.66) 82.67%, rgba(253, 32, 228, 0.66) 99.48%), linear-gradient(180deg, #FAFF9B 73.75%, #F09 120.75%);
-  padding: 5.462px 19.118px;
+  width: 175px;
+  height: 40px;
   font-family: "source-code-pro", monospace;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
   border-radius: 17px 17px 17px 25px;
   align-self: flex-start;
+  color: #350072;
 }
 
 section{
@@ -88,14 +90,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 10px;
-  box-shadow: 0px 4px 4px 0px rgba(85, 0, 255, 0.639);
+  box-shadow: 0px 2px 3px 0px rgba(85, 0, 255, 0.639);
   border: 3px solid rgba(54, 0, 163, 0.639);
   height: 60px;
 }
 
 .navbar-logo {
   width: 60px;
-  padding-left: 5px;
+  padding-left: 35px;
 }
 
 .navbar-links {
@@ -193,13 +195,46 @@ header{
   margin: 20px;
 }
 
+.header-text{
+width: 750px;
+}
+
+.header-graphic{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-name-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F09;
+}
+
 .my-name{
   font-size: 20px;
 }
 
+.details-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F09;
+}
+
+.referees-title,
+.tools-title,
+.education-title {
+  margin-bottom: 85px;
+}
+
 .toolkit-lists{
   display: flex;
-  gap: 100px;
+  gap: 500px;
 }
 
 footer {
@@ -221,20 +256,20 @@ footer {
 }
 
 .footer-icon{
-  width: 50px;
+  width: 42px;
   padding-bottom: 5px;
 }
 
 .linkedin{
-  width: 40px;
+  width: 27px;
 }
 
 .icon-button {
   background-color: transparent;
-  border-radius: 50%;          
-  width: 70px;
-  height: 70px;
-  display: flex;               
+  border-radius: 50%;         
+  width: 50px;
+  height: 50px;
+  display: flex;              
   justify-content: center;
   align-items: center;
   cursor: pointer;
