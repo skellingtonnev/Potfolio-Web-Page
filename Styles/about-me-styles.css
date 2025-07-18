@@ -45,34 +45,83 @@ section{
   margin: 50px 0 50px 100px;
 }
 
-nav{
-  background-color: #B44CFF;
+.nav-text-container{
+  width: 70px; 
+  position: relative;
+  display: inline-block;
+  height: 27px;
+}
+
+.navtext {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.nav-one.nav-one {
+  z-index: 3;
+  color: #f2593d;
+  opacity: 0.7;
+  right: 3px;
+}
+
+.nav-two.nav-two {
+  z-index: 2;
+}
+
+.nav-three.nav-three {
+  z-index: 1;
+  font-size: 22px;
+  color: blue;
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+  top: -5px;
+  right: -10px;
+}
+
+nav {
+  background-image: url('../Images/Landing Page/Navbar Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.41);
-  border: 3px solid #000;
+  padding: 10px 20px 10px 10px;
+  box-shadow: 0px 4px 4px 0px rgba(85, 0, 255, 0.639);
+  border: 3px solid rgba(54, 0, 163, 0.639);
   height: 60px;
 }
 
-.navbar-logo{
+.navbar-logo {
   width: 60px;
   padding-left: 5px;
 }
 
-.navbar-links{
+.navbar-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end; 
+  gap: 80px; 
+  flex-grow: 1;
+  padding-right: 20px;
 }
 
-.navbar-links a{
+.navbar-links a {
   color: #FAFF9B;
-  padding: 0px 20px 0px 20px;
+  padding: 0;       
+  margin: 0;
   font-family: "source-code-pro", monospace;
   font-weight: 600;
   font-style: normal;
-  font-size: 18px;
+  font-size: 22px;
+  text-decoration: none;
+  display: flex;     
+  align-items: center;
+}
+
+.about {
+  position: relative;
+  left: 20px; 
 }
 
 .text-stack {
@@ -182,10 +231,10 @@ footer {
 
 .icon-button {
   background-color: transparent;
-  border-radius: 50%;          /* make it a circle */
+  border-radius: 50%;          
   width: 70px;
   height: 70px;
-  display: flex;               /* centre content */
+  display: flex;               
   justify-content: center;
   align-items: center;
   cursor: pointer;
