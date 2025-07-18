@@ -61,11 +61,12 @@ h1 {
   top: 0;
   left: 0;
   margin-bottom: 100px;
+  filter: saturate(1.6);
 }
 
 .text-one {
   z-index: 4;
-  background: linear-gradient(180deg, #FAFF9B 50%, #F09 140%);
+    background: linear-gradient(180deg, #ff4e4e 10%, rgb(251, 255, 183) 50%, #F09 140%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,7 +75,7 @@ h1 {
 
 .text-two {
   z-index: 3;
-  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #000;
   background: linear-gradient(180deg, #FAFF9B 50%, #F09 140%);
   background-clip: text;

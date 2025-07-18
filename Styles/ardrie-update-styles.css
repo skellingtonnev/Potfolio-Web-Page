@@ -13,6 +13,7 @@ h1{
   font-weight: 900; 
   font-style: normal;
   font-size: 70px;
+  margin-top: 30px;
 }
 
 h2{
@@ -30,7 +31,7 @@ p{
   font-size: 20px;
 }
 
-button{
+button {
   background: linear-gradient(186deg, rgba(251, 255, 180, 0.66) 4.68%, rgba(249, 237, 114, 0.66) 51.38%, rgba(255, 204, 0, 0.66) 82.67%, rgba(253, 32, 228, 0.66) 99.48%), linear-gradient(180deg, #FAFF9B 73.75%, #F09 120.75%);
   padding: 5.462px 19.118px;
   font-family: "source-code-pro", monospace;
@@ -38,6 +39,7 @@ button{
   font-style: normal;
   font-size: 18px;
   border-radius: 17px 17px 17px 25px;
+  align-self: flex-start;
 }
 
 .text-stack {
@@ -56,11 +58,12 @@ button{
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  filter: saturate(1.6);
 }
 
 .text-one {
   z-index: 4;
-  background: linear-gradient(180deg, #FAFF9B 50%, #F09 140%);
+  background: linear-gradient(180deg, #ff4e4e 10%, rgb(251, 255, 183) 50%, #F09 140%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,7 +72,7 @@ button{
 
 .text-two {
   z-index: 3;
-  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #000;
   background: linear-gradient(180deg, #FAFF9B 50%, #F09 140%);
   background-clip: text;
@@ -149,11 +152,12 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -15px;
 }
 
 .subheading{
   position: absolute;
-  background: var(--Typegradient, linear-gradient(92deg, #A10D2D 5.95%, #24004D 21.71%, #24004D 65.25%, #A10D2D 80.64%));
+  background: var(--Typegradient, linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -161,18 +165,19 @@ header{
 
 .sub-one{
   mix-blend-mode: overlay;
-  opacity: 0.9;
+  opacity: 0.2;
   font-size: 26px;
 }
 
 .sub-two{
-  
+ 
 }
 
 .sub-three{
   font-size: 30px;
   mix-blend-mode: overlay;
   opacity: 0.1;
+  
 }
 
 .dropdown-wrapper{
@@ -181,46 +186,35 @@ header{
 }
 
 .ardrie-image{
-  margin-top: 20px;
-  width: 220px;
+  margin-top: 0;
+  width: 210px;
   position: relative;
-}
-
-.highlight{
-  mix-blend-mode: screen;
-  width: 600px;
-  position: absolute;
-  left: 400px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 70px;
-  transform: rotate(10deg) translateX(-45%);
-  transform-origin: center center;
-  filter: saturate(1.6);
+  filter: drop-shadow(0 0 30px #ff8bf5);
 }
 
 main{
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: repeat(3, 1fr);   
-  gap: 60px; 
+  row-gap: 60px; 
+  column-gap: 80px;
   max-width: 400px; 
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 90px;
   
 }
 
 .tab-container{
   position: relative;
-  width: 200px;
+  width: 220px;
   height: 80px;
 }
 
 .tab{
   background: transparent;
-  width: 200px;
+  width: 220px;
   height: 80px;
   display: flex;
   align-items: center;
@@ -228,14 +222,15 @@ main{
   font-family: "dystopian", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 20px;
+  font-size: 24px;
   position: absolute;
   z-index: 15;
   border-radius: 17px;
+  box-shadow: #2e01a1 1px 1px 3px 0px;
 }
 
 .trial-tippy-top{
-  width: 200px;
+  width: 220px;
   height: 80px;
   background: url("../Images/Landing Page/oilmark.jpg");
   mix-blend-mode: overlay;
@@ -245,55 +240,102 @@ main{
   z-index: 14;
 }
 
-.trial-top{
-  width: 200px;
+.trial-top {
+  width: 220px;
   height: 80px;
   border-radius: 17px;
-  border: 7px solid rgb(250, 5, 250);
-  opacity: 0.34;
-  position:absolute;
-  box-sizing: border-box;
+  position: absolute;
   z-index: 13;
+  box-sizing: border-box;
+  opacity: 1;
+
+  /* Gradient border using background and masking */
+  background: linear-gradient(45deg, #6E2FFF, #FE2DFF, #FF2895, #8C319E, #5E20FF);
+  padding: 7px; /* Border width */
+
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
 }
 
 .trial-middle{
-  width: 200px;
+   position:absolute;
+  width: 220px;
   height: 80px;
-  background: linear-gradient(148deg, #200405 47.85%, #DD00A6 125.64%), #000;
-  mix-blend-mode: difference;
   border-radius: 17px;
-  position:absolute;
-  z-index: 11;
+  background: linear-gradient(135deg, #f948ff 0%, #ff48d4 60%, #C033FF 80%);
+  z-index: 12;
+  mix-blend-mode:color-burn;
 }
 
 .trial-bottom{
   position:absolute;
-  width: 200px;
+  width: 220px;
   height: 80px;
   border-radius: 17px;
-  background: linear-gradient(120deg, #F870FF -3.84%, #FE68FF 24.83%, #FF59F9 54.06%, #E752FF 79.97%, #C342FE 110.85%), linear-gradient(187deg, #F870FF 4.25%, #FE68FF 33.55%, #FF59F9 63.42%, #E752FF 89.9%, #C342FE 121.46%), linear-gradient(187deg, #F870FF 4.25%, #C342FE 121.46%), linear-gradient(43deg, #C446DC 33.52%, #F5F97B 126.8%), #C446DC;
+  background: linear-gradient(145deg, #F948FF 0%, #F948FF 60%, #C033FF 80%);
   z-index: 12;
+
 }
 
 .gradient-text {
-  background: var(--yellowgradient, linear-gradient(180deg, #FAFF9B 60.75%, #F09 100.75%));
+  background: var(--yellowgradient, linear-gradient(180deg, #faffae 60.75%, #F09 140.75%));
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  -webkit-text-stroke: 0.5px black;
+  -webkit-text-stroke: 0.2px black;
+  filter: saturate(1.6);
 }
 
 .gradient-text-2{
-  -webkit-text-stroke: 0.5px black;
-  padding-right: 1px;
+  -webkit-text-stroke: 0.8px black;
+  padding-right: 2px;
   padding-top: 1px;
   mix-blend-mode: darken;
 }
 
-footer{
+footer {
   margin-top: 150px;
   margin-bottom: 100px;
   text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 100px 50px 100px;
+}
+
+.footer-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icon{
+  width: 50px;
+  padding-bottom: 5px;
+}
+
+.linkedin{
+  width: 40px;
+}
+
+.icon-button {
+  background-color: transparent;
+  border-radius: 50%;          /* make it a circle */
+  width: 70px;
+  height: 70px;
+  display: flex;               /* centre content */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
 }
