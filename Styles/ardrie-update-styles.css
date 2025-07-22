@@ -24,11 +24,14 @@ h2{
   margin: 0;
 }
 
-p{
+p {
   font-family: "dystopian", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  background: linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -61,6 +64,7 @@ button {
   transform: translateX(-50%);
   text-align: center;
   filter: saturate(1.6);
+  margin-top: 0;
 }
 
 .text-one {
@@ -203,7 +207,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -15px;
+  margin-top: -50px;
 }
 
 .subheading{
@@ -233,14 +237,18 @@ header{
 
 .dropdown-wrapper{
   align-self: flex-end;
-  margin: 20px;
+  margin: 20px 20px 0 0;;
 }
 
 .ardrie-image{
   margin-top: 0;
   width: 210px;
   position: relative;
-  filter: drop-shadow(0 0 30px #ff8bf5);
+  filter: drop-shadow(0 0 40px #ff52dc);
+  filter:drop-shadow(0 0 5px #ff52dc);
+  filter:drop-shadow(0 0 10px #ff52dc);
+  filter:drop-shadow(0 0 20px #ff52dc);
+  filter:drop-shadow(0 0 30px #ff52dc);
 }
 
 main{
@@ -253,7 +261,7 @@ main{
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 65px;
   
 }
 

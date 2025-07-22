@@ -80,6 +80,9 @@ h2 {
   font-style: normal;
   font-size: 25px;
   margin: 0;
+  background: linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -87,6 +90,9 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  background: linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -328,4 +334,28 @@ footer {
   align-items: center;
   cursor: pointer;
   padding: 0;
+}
+
+@media (min-width: 480px) {
+  /* Larger phones */
+}
+
+@media (min-width: 480px) {
+  /* Larger phones */
+}
+
+@media (min-width: 768px) {
+  /* Tablets */
+}
+
+@media (min-width: 992px) {
+  /* Small laptops */
+}
+
+@media (min-width: 1200px) {
+  /* Desktops */
+}
+
+@media (min-width: 1440px) {
+  /* Big screens */
 }
