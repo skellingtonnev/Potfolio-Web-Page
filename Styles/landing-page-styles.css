@@ -549,10 +549,10 @@ header{
 
   .stack-one.stack-two{
     width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
   }
 
   .text-stack .title{

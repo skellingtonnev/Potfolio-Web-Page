@@ -27,7 +27,7 @@ p {
   font-family: "dystopian", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.737rem + 0.726vw, 1.563rem);
   background: linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -199,7 +199,7 @@ header{
 }
 
 .header-text{
-width: 750px;
+ width: 750px;
 }
 
 .header-graphic{
@@ -409,5 +409,141 @@ footer {
   align-items: center;
   cursor: pointer;
   padding: 0;
+}
+
+/* === Extra Large Desktops (4K and up) === */
+@media (min-width: 1600px) {
+  .header-text{
+ width: 1050px;
+}
+}
+
+/* === Medium Desktops / Small Laptops === */
+@media (max-width: 1280px) {
+  
+}
+
+/* === Tablets (portrait & landscape) === */
+@media (max-width: 1024px) {
+  header{
+    gap: 60px;
+  }
+
+  .header-text{
+    width: 600px;
+  }
+
+  .toolkit-lists{
+    gap: 330px;
+    margin-top: 20px;
+  }
+
+  .education-title{
+    margin-bottom: 100px;
+  }
+
+  .referees-title{
+    margin-bottom: 100px;
+  }
+}
+
+/* === Mobile Landscape / Phablets === */
+@media (max-width: 768px) {
+  header{
+    gap: 18px;
+  }
+
+  .toolkit-lists{
+    gap: 280px;
+  }
+}
+
+/* === Mobile Portrait === */
+@media (max-width: 600px) {
+  h1{
+    font-size: 67px;
+  }
+  header{
+    flex-direction: column;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  section{
+    margin: 50px 0 50px 0
+  }
+
+  .text-stack{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 110px;
+  }
+  
+  .text-stack .title{
+    width: 100%;
+  }
+
+  .header-text p{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .toolkit-lists{
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 100px;
+  }
+
+  .toolkit-lists p{
+    width: 200px;
+  }
+
+}
+
+/* === Tiny Devices === */
+@media (max-width: 360px) {
+  .navbar-logo{
+    display: none;
+  }
+
+  .navbar-links{
+    padding: 0;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  header{
+    gap: 80px;
+    margin-top: 50px;
+  }
+
+  section{
+    margin: 75px 0 75px 0
+  }
+
+  .text-stack{
+    margin-bottom: 70px;
+  }
+
+  .header-text p{
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  .toolkit-lists{
+    gap: 40px;
+  }
+
+  .toolkit-lists p{
+    width: 200px;
+  }
+
 }
 

@@ -65,6 +65,7 @@ button {
   text-align: center;
   filter: saturate(1.6);
   margin-top: 0;
+  width: 100%;
 }
 
 .text-one {
@@ -417,20 +418,90 @@ footer {
 
 /* === Mobile Landscape / Phablets === */
 @media (max-width: 768px) {
-  
+  main{
+    row-gap: 40px; 
+    column-gap: 25px;
+  }
 }
 
 /* === Mobile Portrait === */
 @media (max-width: 600px) {
-  
-}
+  main{
+    column-gap: 35px;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr);  
+  }
 
-/* === Small Phones === */
-@media (max-width: 480px) {
-  
+  .ardrie-image{
+    width: 190px;
+  }
+
 }
 
 /* === Tiny Devices === */
 @media (max-width: 360px) {
-  
+  .navbar-logo{
+    display: none;
+  }
+
+  h1{
+    font-size: 43px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .tab-container,
+  .tab,
+  .trial-tippy-top,
+  .trial-top,
+  .trial-middle,
+  .trial-bottom {
+    width: 150px; 
+    height: 80px;
+  }
+
+  .gradient-text,
+  .gradient-text-2{
+    font-size: 20px;
+  }
+
+  main{
+    column-gap: 10px;
+  }
+
+  @media (max-width: 360px) {
+  .dropdown-wrapper{
+    align-self: center;
+    margin: 30px 0 0 0;
+  }
+  .ardrie-image{
+    margin-top: 30px;
+  }
+  .text-stack{
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .tab-container,
+  .tab,
+  .trial-tippy-top,
+  .trial-top,
+  .trial-middle,
+  .trial-bottom {
+    width: 150px;
+    height: 70px;
+  }
+
+  main {
+    column-gap: 0;
+    row-gap: 42px;
+    justify-content: center;
+    place-items: center;
+  }
+
+  .tab {
+    font-size: 16px;
+  }
+}
 }
