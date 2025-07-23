@@ -89,7 +89,7 @@ p {
   font-family: "dystopian", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.737rem + 0.726vw, 1.563rem);
   background: linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -332,275 +332,310 @@ footer {
   padding: 0;
 }
 
-@media (max-width: 479px) {
-  /* Smaller phones */
-}
+/* === Extra Large Desktops (4K and up) === */
+@media (min-width: 1600px) {
 
-@media (max-width: 767px) {
-  /* Larger phones */
-
-  .navbar-logo{
-    padding-left: 10px;
-  }
-
-  button{
-  font-size: 13px;
-  width: 130px;
-  height: 30px;
-  }
-
-  header{
-    margin-top: 120px;
-  }
-
-  .landing-image{
-    display: none;
-  }
-
-  h1{
-    font-size: 45px;
-  }
-
-  p{
-    font-size: 15px;
-  }
-
-  h2{
-    font-size: 20px;
-  }
-
-  .landing-title{
-    gap: 7px;
-  }
-
-  .skills-icons{
-    display: none;
-  }
-
-  .view-my-work{
-    margin-bottom: 15px;
-  }
-
-  .featured-text-container {
-    margin-bottom: 10px;
-  }
-
-  .project-list{
-    gap: 15px;
-  }
-  
-  .project-image-container {
-  height: 100px;
-  margin: 25px 0 50px 0;
-  position: relative;
-}
-
-} 
-
-@media (max-width: 991px) {
-  /* Tablets */
-
-.landing-image{
-    width: 30px;
-    padding-bottom: 19px;
-  }
-
-  h1{
-    font-size: 52px;
-  }
-
-  p{
-    font-size: 16px;
-  }
-
-  header{
-    gap: 95px;
-    margin-top: 85px;
-  }
-
-  .landing-title{
-    gap: 9px;
-  }
-
-  button{
-  font-size: 14px;
-  width: 145px;
-  height: 33px;
-  }
-
-  .skills-icons {
-  width: 275px;
-  margin-top: 140px;
-  padding-right: 15px;
-  }
-
-  .skills-content{
-    gap: 50px;
-    margin-bottom: 200px;
-  }
-
-  h2{
-  font-size: 20px;
-  }
-
-  .view-my-work{
-    margin-bottom: 15px;
-  }
-
-  .project-image-container {
-  height: 100px;
-  margin: 25px 0 50px 0;
-  position: relative;
-}
-
-.project-list{
-  gap: 15px;
-}
-
-}
-
-@media (max-width: 1199px) {
-  /* Small laptops */
-
-  .landing-image{
-    width: 400px;
-  }
-
-  header{
-    gap: 120px;
-    margin-top: 120px;
-    margin-bottom: 110px;
-  }
-
-  h1{
-    font-size: 60px;
-  }
-
-  p{
-    font-size: 18px;
-  }
-
-  .skills-content{
-    gap: 150px;
-    margin-bottom: 200px;
-  }
-
-  .skills-icons {
-  width: 300px;
-  margin-top: 140px;
-  padding-right: 15px;
-  }
-
-  .landing-title{
-    gap: 20px;
-  }
-
-  button{
-    font-size: 16px;
-    width: 165px;
-    height: 38px;
-  }
-
-  .footer-container{
-    margin: 200px 100px 50px 100px;
-  }
-  }
-
-  @media (max-width: 1299px) {
-    /* Desktops */
-
-    /* This is the default mode */
-  }
-
-@media (min-width: 1385px) {
-  /* Desktops */
-  .landing-image {
-    width: 500px;
-  }
-
-  h1{
-    font-size: 80px;
-  }
-
-  p{
-    font-size: 25px;
-  }
-
-  .stack-two{
-    margin-top: 15px;
-  }
-
-  button{
-   width: 200px;
-   height: 45px;
-   font-size: 21px;
-  }
-
-  .featured-text-container {
-  margin-bottom: 100px;
-  }
-
-}
-
-@media (min-width: 1700px) {
-  /* Big screens */
-
-  .landing-image {
-    width: 550px;
-  }
-
-  header{
-    gap: 150px;
-  }
-
-  h1{
-    font-size: 85px;
-  }
-
-  p{
-    font-size: 30px;
-  }
-
-  button{
-   width: 220px;
-   height: 50px;
-   font-size: 25px;
-  }
-
-
-  .landing-title{
-    gap: 40px;
-  }
-
-  .stack-two{
-    margin-top: 20px;
-  }
-
-  .skills-icons {
-    width: 470px;
-    margin-top: 130px;
-}
-
-.skills-content{
-  gap: 150px;
-}
-
-.featured-text-container {
-  margin-bottom: 120px;
-}
-
-.project-image-container {
-  height: 200px;
-  margin: 50px 0 70px 0;
-  position: relative;
+h1{
+  font-size: 90px;
 }
 
 h2{
   font-size: 30px;
 }
 
-.view-my-work{
-  margin-bottom: 10px;
+header{
+ gap: 260px;
+}
+  
+.landing-image{
+  width: 600px;
 }
 
+.stack-two{
+  margin-top: 25px;
+}
+
+.open-sentence{
+  margin: 42px 0 0 0;
+}
+
+.skills-content{
+  gap: 330px;
+  padding-right: 20px;
+  margin-bottom: 230px;
+}
+
+.skills-text{
+  margin-top: 120px;
+}
+
+.skills-icons{
+  margin-top: 170px;
+  width: 420px;
+}
+
+.featured-text-stack{
+  margin-top: -75px;
+}
+
+.project-list{
+  margin-top: 140px;
+  gap: 200px;
+}
+
+.project-image-container{
+  height: 200px;
+}
+
+.footer-container{
+  margin-top: 300px;
+}
+
+
+}
+
+/* === Large Desktops (default) === */
+/* No media query needed – default styles go here */
+
+/* === Medium Desktops / Small Laptops === */
+@media (max-width: 1280px) {
+  .skills-content{
+    gap: 200px;
+    margin-bottom: 150px;
+  }
+
+ .skills-icons{
+  width: 420px;
+  padding-right: 60px;
+  box-sizing: border-box;
+ }
+
+ .footer-container{
+  margin-top: 200px;
+ }
+}
+
+/* === Tablets (portrait & landscape) === */
+@media (max-width: 1024px) {
+
+  h1{
+    font-size: 60px;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
+  header{
+    gap: 125px;
+  }
+
+  .landing-title{
+    gap: 15px;
+  }
+
+  .open-sentence{
+    margin-bottom: 15px;
+  }
+
+  .landing-image{
+    width: 375px;
+  }
+
+  .skills-content{
+    gap: 90px;
+  }
+
+  .skills-header{
+    margin-bottom: 80px;
+  }
+
+  .skills-text{
+    margin-top: 0;
+  }
+
+  .skills-icons{
+    width: 350px;
+    padding-right: 40px;
+  }
+
+  .project-list{
+    gap: 50px;
+  }
+}
+
+/* === Mobile Landscape / Phablets === */
+@media (max-width: 768px) {
+  h1{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  header{
+    gap: 65px;
+  }
+
+  .landing-title{
+    gap: 3px;
+  }
+
+  .landing-image{
+    width: 280px;
+    padding-bottom: 15px;
+  }
+
+  .skills-content{
+    gap: 40px;
+  }
+
+  .skills-header{
+    margin-bottom: 70px;
+  }
+
+  .skills-text{
+    margin-top: 0;
+  }
+
+  .skills-icons{
+    width: 260px;
+    padding-right: 10px;
+  }
+
+  .featured-text-container{
+    margin-bottom: 40px;
+  }
+
+  .project-list{
+    gap: 10px;
+  }
+
+  .project-image-container{
+    height: 120px;
+    margin-bottom: 50px;
+  }
+}
+
+/* === Mobile Portrait === */
+@media (max-width: 600px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-image{
+    order: 1;
+    width: 250px;
+  }
+
+  .landing-title{
+    order: 2;
+    text-align: center;
+    width: 100%;
+  }
+
+  .work-button{
+    align-self: center;
+  }
+  
+  .headers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .stack-one.stack-two{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+  .text-stack .title{
+    width: 100%;
+  }
+
+  .skills-content{
+    flex-direction: column;
+  }
+
+  .skills-icons{
+    display: none;
+  }
+
+  .project-list{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-header{
+    display: flex;
+  }
+
+  .view-my-work{
+    margin-bottom: 7px;
+  }
+
+  .skills-description{
+    text-align: center;
+  }
+  
+}
+
+/* === Small Phones === */
+@media (max-width: 480px) {
+
+  h1{
+    font-size: 47px;
+  }
+
+  .navbar-logo{
+    padding-left: 0;
+    padding-right: 10;
+  }
+
+  .navbar-links{
+    padding-right: 0;
+  }
+
+}
+
+/* === Tiny Devices === */
+@media (max-width: 360px) {
+  .navbar-logo{
+    display: none;
+  }
+
+  .navbar-links{
+    gap: 50px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  .text-stack{
+    height: 45px;
+  }
+
+  .skills-header{
+    margin-bottom: 50px;
+  }
+
+  .view-my-work{
+    margin-bottom: 20px;
+  }
+
+  .skills-text .problem-br {
+    display: none;
+  }
+
+  .skills-text u::before {
+    content: ' ';
+  }
 }

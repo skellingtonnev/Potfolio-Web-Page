@@ -399,3 +399,38 @@ footer {
   cursor: pointer;
   padding: 0;
 }
+
+/* === Extra Large Desktops (4K and up) === */
+@media (min-width: 1600px) {
+  
+}
+
+/* === Medium Desktops / Small Laptops === */
+@media (max-width: 1280px) {
+  
+}
+
+/* === Tablets (portrait & landscape) === */
+@media (max-width: 1024px) {
+  
+}
+
+/* === Mobile Landscape / Phablets === */
+@media (max-width: 768px) {
+  
+}
+
+/* === Mobile Portrait === */
+@media (max-width: 600px) {
+  
+}
+
+/* === Small Phones === */
+@media (max-width: 480px) {
+  
+}
+
+/* === Tiny Devices === */
+@media (max-width: 360px) {
+  
+}
