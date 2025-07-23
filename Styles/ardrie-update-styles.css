@@ -32,12 +32,13 @@ p {
   background: linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 0px rgba(124, 112, 255, 0.4), -2px -2px 0px rgba(255, 112, 112, 0.4);
 }
 
 button {
-  background: linear-gradient(186deg, rgba(251, 255, 180, 0.66) 4.68%, rgba(249, 237, 114, 0.66) 51.38%, rgba(255, 204, 0, 0.66) 82.67%, rgba(253, 32, 228, 0.66) 99.48%), linear-gradient(180deg, #FAFF9B 73.75%, #F09 120.75%);
+  background: linear-gradient(186deg, rgba(251, 255, 180, 0.66) 4.68%, rgba(249, 237, 114, 0.66) 51.38%, rgba(255, 204, 0, 0.66) 82.67%, rgba(253, 32, 228, 0.66) 99.48%), linear-gradient(180deg, #FAFF9B 73.75%, #F09 100.75%);
   width: 175px;
-  height: 40px;
+  height: 39px;
   font-family: "source-code-pro", monospace;
   font-weight: 500;
   font-style: normal;
@@ -70,7 +71,7 @@ button {
 
 .text-one {
   z-index: 4;
-  background: linear-gradient(180deg, #ff4e4e 10%, rgb(251, 255, 183) 50%, #F09 140%);
+  background: linear-gradient(180deg, #ffb84e 10%, rgb(252, 255, 198) 50%, rgb(255, 55, 0) 140%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
