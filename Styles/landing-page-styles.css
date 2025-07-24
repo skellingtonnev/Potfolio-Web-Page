@@ -24,8 +24,8 @@ h1 {
 
 .title {
   position: absolute;
-  top: -3px;
-  right: 0.3%;
+  top: -2px;
+  right: 0.2%;
   margin-bottom: 100px;
   filter: saturate(1.6);
   width: 100%;
@@ -108,6 +108,7 @@ button {
   border-radius: 17px 17px 17px 25px;
   align-self: flex-start;
   color: #350072;
+  filter: drop-shadow(1px 1px 0px #5549ff80) drop-shadow(-1px -1px 0px rgba(255, 72, 72, 0.5));
 }
 
 .nav-text-container{
@@ -126,7 +127,7 @@ button {
 .nav-one.nav-one {
   z-index: 3;
   color: #f2593d;
-  opacity: 0.7;
+  opacity: 0.5;
   right: 3px;
 }
 
@@ -186,7 +187,7 @@ nav {
 
 .about {
   position: relative;
-  left: 20px; 
+  left: 30px; 
 }
 
 .landing-title{
@@ -201,7 +202,7 @@ nav {
 }
 
 .landing-image{
-  width: 450px;
+  width: 430px;
 }
 
 header {
@@ -239,6 +240,7 @@ header {
 .skills-icons {
   width: 350px;
   margin-top: 130px;
+  filter: drop-shadow(1px 1px 0px #5549ff80) drop-shadow(-1px -1px 0px rgba(255, 72, 72, 0.5));
 }
 
 .subheading-stack{
@@ -248,6 +250,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: -50px;
+  margin-bottom: 10px;
 }
 
 .subheading{
@@ -276,7 +279,7 @@ header {
 }
 
 .featured-projects {
-  margin-top: 120px;
+  margin-top: 290px;
   text-align: center;
 }
 
@@ -327,6 +330,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  filter: drop-shadow(2px 2px 0px #5549ff80) drop-shadow(-2px -2px 0px rgba(255, 72, 72, 0.5));
 }
 
 footer {
@@ -370,6 +374,12 @@ footer {
 
 /* === Extra Large Desktops (4K and up) === */
 @media (min-width: 1600px) {
+
+button{
+  width: 194.44px;     /* 175 * 1.111 */
+  height: 43.33px;     /* 39 * 1.111 */
+  font-size: 20px;     /* 18 * 1.111 */
+}
 
 h1{
   font-size: 90px;
@@ -434,7 +444,7 @@ header{
 /* No media query needed – default styles go here */
 
 /* === Medium Desktops / Small Laptops === */
-@media (max-width: 1280px) {
+@media (max-width: 1107px) {
   .skills-content{
     gap: 200px;
     margin-bottom: 150px;
@@ -452,7 +462,13 @@ header{
 }
 
 /* === Tablets (portrait & landscape) === */
-@media (max-width: 1024px) {
+@media (max-width: 1107px) {
+
+  button{
+    width: 149.63px;     /* 175 * 0.855 */
+    height: 33.35px;     /* 39 * 0.855 */
+    font-size: 15.39px;  /* 18 * 0.855 */
+  }
 
   h1{
     font-size: 60px;
@@ -498,10 +514,25 @@ header{
   .project-list{
     gap: 50px;
   }
+
+  .subheading-stack{
+    margin-bottom: 20px;
+  }
+
+  .featured-projects{
+    margin-top: 260px;
+  }
 }
 
 /* === Mobile Landscape / Phablets === */
-@media (max-width: 768px) {
+@media (max-width: 977px) {
+
+  button{
+    width: 126px;        /* 175 * 0.72 */
+    height: 28.08px;     /* 39 * 0.72 */
+    font-size: 12.96px;  /* 18 * 0.72 */
+  }
+
   h1{
     font-size: 50px;
   }
@@ -552,10 +583,24 @@ header{
     height: 120px;
     margin-bottom: 50px;
   }
+
+  .footer-icon{
+    width: 32px;
+  }
+
+  .icon-button{
+    width: 40px;
+    height: 40px;
+  }
+
+  .linkedin{
+    width: 23px;
+    padding-left: 2px;
+  }
 }
 
 /* === Mobile Portrait === */
-@media (max-width: 600px) {
+@media (max-width: 765px) {
   header{
     flex-direction: column;
     align-items: center;
@@ -597,10 +642,15 @@ header{
 
   .skills-content{
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
   .skills-icons{
     display: none;
+  }
+
+  .featured-projects{
+    margin-top: 240px;
   }
 
   .project-list{
@@ -620,34 +670,20 @@ header{
   .skills-description{
     text-align: center;
   }
+
+  
   
 }
 
-/* === Small Phones === */
-@media (max-width: 480px) {
-
-  h1{
-    font-size: 47px;
-  }
-
-  .navbar-logo{
-    padding-left: 0;
-    padding-right: 10;
-  }
-
-  .navbar-links{
-    padding-right: 0;
-  }
-
-}
 
 /* === Tiny Devices === */
-@media (max-width: 360px) {
+@media (max-width: 470px) {
   .navbar-logo{
     display: none;
   }
 
-  .navbar-links{
+  .navbar-links {
+    justify-content: flex-start;
     gap: 50px;
   }
 
@@ -667,11 +703,20 @@ header{
     margin-bottom: 20px;
   }
 
-  .skills-text .problem-br {
-    display: none;
+  .subheading-stack{
+    margin-bottom: 35px;
   }
 
-  .skills-text u::before {
-    content: ' ';
+  footer{
+    margin-top: 50px;
+  }
+
+  .footer-container{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .top-footer-button{
+    align-self: center;
   }
 }

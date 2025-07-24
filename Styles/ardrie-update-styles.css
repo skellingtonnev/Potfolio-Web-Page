@@ -12,7 +12,7 @@ h1{
   font-family: "dystopian", sans-serif; 
   font-weight: 900; 
   font-style: normal;
-  font-size: 70px;
+  font-size: 65px;
   margin-top: 30px;
 }
 
@@ -20,7 +20,7 @@ h2{
   font-family: "dystopian", sans-serif; 
   font-weight: 700; 
   font-style: normal;
-  font-size: 25px;
+  font-size: 23px;
   margin: 0;
 }
 
@@ -46,6 +46,7 @@ button {
   border-radius: 17px 17px 17px 25px;
   align-self: flex-start;
   color: #350072;
+  filter: drop-shadow(1px 1px 0px #5549ff80) drop-shadow(-1px -1px 0px rgba(255, 72, 72, 0.5));
 }
 
 .text-stack {
@@ -133,7 +134,7 @@ button {
 .nav-one.nav-one {
   z-index: 3;
   color: #f2593d;
-  opacity: 0.7;
+  opacity: 0.5;
   right: 3px;
 }
 
@@ -172,15 +173,15 @@ nav {
 
 .navbar-links {
   display: flex;
-  justify-content: flex-end;
-  gap: 80px;
+  justify-content: flex-end; 
+  gap: 80px; 
   flex-grow: 1;
   padding-right: 20px;
 }
 
 .navbar-links a {
   color: #FAFF9B;
-  padding: 0;         
+  padding: 0;       
   margin: 0;
   font-family: "source-code-pro", monospace;
   font-weight: 600;
@@ -193,7 +194,7 @@ nav {
 
 .about {
   position: relative;
-  left: 20px; 
+  left: 30px;  
 }
 
 header{
@@ -239,18 +240,24 @@ header{
 
 .dropdown-wrapper{
   align-self: flex-end;
-  margin: 20px 20px 0 0;;
+  margin: 20px 20px 0 0;
+}
+
+.dropdown-button{
+  width: 200px;
 }
 
 .ardrie-image{
-  margin-top: 0;
-  width: 210px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 200px;
   position: relative;
-  filter: drop-shadow(0 0 40px #ff52dc);
-  filter:drop-shadow(0 0 5px #ff52dc);
-  filter:drop-shadow(0 0 10px #ff52dc);
-  filter:drop-shadow(0 0 20px #ff52dc);
-  filter:drop-shadow(0 0 30px #ff52dc);
+  filter: drop-shadow(3px 3px 0px #5549ff80) drop-shadow(-3px -3px 0px rgba(255, 72, 72, 0.5));
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 2px #e986ff)
+          drop-shadow(0 0 4px #e986ff)
+          drop-shadow(0 0 6px #e986ff);
 }
 
 main{
@@ -287,8 +294,8 @@ main{
   position: absolute;
   z-index: 15;
   border-radius: 17px;
- box-shadow: #2e01a1 1px 1px 1px 0px;
-  border: 3px solid black;
+  filter: drop-shadow(1.5px 1.5px 0px #5549ff80) drop-shadow(-1.5px -1.5px 0px rgba(255, 72, 72, 0.5));
+  border: 1.5px solid rgb(50, 0, 43);
 }
 
 .trial-tippy-top{
@@ -296,43 +303,29 @@ main{
   height: 80px;
   background: url("../Images/Landing Page/oilmark.jpg");
   mix-blend-mode: overlay;
-  opacity: 0.34;
+  opacity: 0.2;
   position:absolute;
-  border-radius: 17px;
+  border-radius: 18px;
   z-index: 14;
 }
 
 .trial-top {
   width: 220px;
   height: 80px;
-  border-radius: 17px;
+  border-radius: 18px;
   position: absolute;
   z-index: 13;
   box-sizing: border-box;
-  opacity: 1;
-
-  
   background: linear-gradient(45deg, #6E2FFF, #FE2DFF, #FF2895, #8C319E, #5E20FF);
   padding: 7px; 
-
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
-
   background-clip: padding-box, border-box;
   background-origin: border-box;
-}
-
-.trial-middle{
-  position:absolute;
-  width: 220px;
-  height: 80px;
-  border-radius: 17px;
-  background: linear-gradient(135deg, #f948ff 0%, #ff48d4 60%, #C033FF 80%);
-  z-index: 12;
-  mix-blend-mode:color-burn;
+  opacity: 0.3;
 }
 
 .trial-bottom{
@@ -342,25 +335,26 @@ main{
   border-radius: 17px;
   background: linear-gradient(145deg, #F948FF 0%, #F948FF 60%, #C033FF 80%);
   z-index: 12;
-
 }
 
 .gradient-text {
-  background: var(--yellowgradient, linear-gradient(180deg, #faffae 60.75%, #F09 140.75%));
-  color: transparent;
+  color: rgb(67, 0, 57);
+  -webkit-text-fill-color: rgb(46, 0, 39);
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  background: none;
+  position: absolute;
+  padding-top: 3px;
+}
+
+.gradient-text-2 {
+  background: var(--yellowgradient, linear-gradient(180deg, #feffae 60.75%, rgb(255, 0, 55) 130.75%));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: absolute;
-  -webkit-text-stroke: 0.2px black;
-  filter: saturate(1.6);
-}
-
-.gradient-text-2{
-  -webkit-text-stroke: 0.8px black;
+  -webkit-text-stroke: 0.5px black;
   padding-right: 2px;
   padding-top: 1px;
-  mix-blend-mode: darken;
 }
 
 footer {
@@ -418,7 +412,7 @@ footer {
 }
 
 /* === Mobile Landscape / Phablets === */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   main{
     row-gap: 40px; 
     column-gap: 25px;
@@ -426,7 +420,7 @@ footer {
 }
 
 /* === Mobile Portrait === */
-@media (max-width: 600px) {
+@media (max-width: 775px) {
   main{
     column-gap: 35px;
     grid-template-columns: repeat(2, 1fr); 
@@ -439,70 +433,79 @@ footer {
 
 }
 
-/* === Tiny Devices === */
-@media (max-width: 360px) {
-  .navbar-logo{
-    display: none;
-  }
-
+@media (max-width: 535px){
   h1{
-    font-size: 43px;
+    font-size: 53px;
+  }
+  .navbar-logo{
+    padding-left: 10px;
   }
 
-  h2{
-    font-size: 20px;
-  }
-
-  .tab-container,
-  .tab,
-  .trial-tippy-top,
-  .trial-top,
-  .trial-middle,
-  .trial-bottom {
-    width: 150px; 
-    height: 80px;
-  }
-
-  .gradient-text,
-  .gradient-text-2{
-    font-size: 20px;
+  .ardrie-image{
+    margin-top: 30px;
   }
 
   main{
     column-gap: 10px;
   }
 
-  @media (max-width: 360px) {
-  .dropdown-wrapper{
+.footer-container{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  footer{
+    margin-top: 100px;
+  }
+
+  .top-footer-button{
     align-self: center;
-    margin: 30px 0 0 0;
   }
-  .ardrie-image{
-    margin-top: 30px;
+  
+}
+
+
+
+/* === Tiny Devices === */
+@media (max-width: 535px) {
+  .navbar-links {
+    justify-content: flex-start;
+    gap: 50px;
   }
-  .text-stack{
-    margin-top: 30px;
-    margin-bottom: 60px;
+
+  .navbar-logo {
+    display: none;
   }
-  .tab-container,
-  .tab,
-  .trial-tippy-top,
-  .trial-top,
-  .trial-middle,
-  .trial-bottom {
-    width: 150px;
-    height: 70px;
+
+  h1 {
+    font-size: 43px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   main {
-    column-gap: 0;
-    row-gap: 42px;
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(1, 1fr);   
+    row-gap: 20px; 
+    height: 100vh;
+    margin-top: 40px;
     place-items: center;
   }
 
-  .tab {
-    font-size: 16px;
+  .dropdown-wrapper {
+    align-self: center;
+    margin: 30px 0 0 0;
   }
-}
+
+  .ardrie-image {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .text-stack {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 }
