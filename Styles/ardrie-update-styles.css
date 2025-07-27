@@ -29,6 +29,17 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  background: linear-gradient(92deg, #f2ff00 10.95%, #f2ff00 21.71%, #e5ff00 65.25%, #f2ff00 80.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -2px -2px 0px rgba(255, 112, 112, 0.4);
+}
+
+.footer-p {
+  font-family: "dystopian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 0.737rem + 0.726vw, 1.563rem);
   background: linear-gradient(92deg, #83001c 5.95%, #24004D 21.71%, #24004D 65.25%, #83001c 80.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -394,6 +405,62 @@ footer {
   align-items: center;
   cursor: pointer;
   padding: 0;
+}
+
+.dropdown-button:hover {
+  color: #ff00bb;
+}
+
+/* Info panel styles */
+.panel {
+  width: 154px;
+  background: linear-gradient(135deg, #F85DFF, #CE3FFF);
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 24px;
+  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* Disable interactions when hidden */
+  text-align: right;
+  position: absolute;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px rgba(124, 112, 255, 0.4), -2px -2px 0px rgba(255, 112, 112, 0.4);
+  z-index: 100;
+}
+
+/* Panel visible state */
+.panel.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Panel text styling */
+.panel p {
+  margin: 6px 0;
+}
+
+.panel p.status {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.panel p.role {
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.panel p.value {
+  color: #4b5563;
+}
+
+.panel p.bottom-value {
+  margin-bottom: 0;
 }
 
 /* === Extra Large Desktops (4K and up) === */
