@@ -5,7 +5,7 @@ html, body {
 body{
   margin: 0;
   padding: 0;
-  background: url("../Images/Project Background.png") lightgray 50% / cover no-repeat;
+  background: url("../Images/Project\ Background.jpg") lightgray 50% / cover no-repeat;
 }
 
 h1{
@@ -461,6 +461,15 @@ footer {
 
 .panel p.bottom-value {
   margin-bottom: 0;
+}
+
+[data-aos="blend-safe-fade"] {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+[data-aos="blend-safe-fade"].aos-animate {
+  opacity: 1;
 }
 
 /* === Extra Large Desktops (4K and up) === */

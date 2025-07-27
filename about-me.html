@@ -7,6 +7,7 @@
     <title>Thomas Mathers Portfolio</title>
     <link rel="stylesheet" href="Styles/about-me-styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/qyt5ery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <head>
 
     <body>
@@ -38,7 +39,7 @@
   </nav>
 
       <header>
-        <div class="header-graphic">
+        <div class="header-graphic" data-aos="blend-safe-fade">
           <img class="header-image" src="Images/Landing Page/POR_about-hero-image.png">
           <div class="my-name-container">
             <h2 class="my-name name-four">Thomas Mathers</h2>
@@ -51,7 +52,7 @@
             <div class="trial-bottom"></div>
           </div>
 
-          <div class="details-container">
+          <div class="details-container" data-aos="blend-safe-fade">
             <div class="details-text">
             <p><strong>Location:</strong> <span class="right-text">Melbourne</span></p>
             <p><strong>Role:</strong> <span class="right-text">UI/UX Designer</span></p>
@@ -66,12 +67,12 @@
 
         <div class="header-text">
           <div class="text-stack">
-              <h1 class="title text-four">About Me</h1>
-              <h1 class="title text-three">About Me</h1>
-              <h1 class="title text-two">About Me</h1>
-              <h1 class="title text-one">About Me</h1>
+              <h1 class="title text-four" data-aos="blend-safe-fade">About Me</h1>
+              <h1 class="title text-three" data-aos="blend-safe-fade" data-aos-delay="100">About Me</h1>
+              <h1 class="title text-two" data-aos="blend-safe-fade" data-aos-delay="200">About Me</h1>
+              <h1 class="title text-one" data-aos="blend-safe-fade" data-aos-delay="300">About Me</h1>
             </div>
-          <p class="about-me-text">
+          <p class="about-me-text" data-aos="blend-safe-fade">
             Hello! I&#39m Tom, a student in my final year at Monash University studying communication design with a specialization in UI/UX!
             <br><br>
             I&#39ve always found great pleasure in tinkering with unique aesthetics, whether in the context of building my own Neocities website in highschool or consuming media with flashy experimental effects.
@@ -85,13 +86,13 @@
 
       <section>
         <div class="text-stack tools-title">
-              <h1 class="title text-four">Toolkit</h1>
-              <h1 class="title text-three">Toolkit</h1>
-              <h1 class="title text-two">Toolkit</h1>
-              <h1 class="title text-one">Toolkit</h1>
+              <h1 class="title text-four" data-aos="blend-safe-fade">Toolkit</h1>
+              <h1 class="title text-three" data-aos="blend-safe-fade" data-aos-delay="100">Toolkit</h1>
+              <h1 class="title text-two" data-aos="blend-safe-fade" data-aos-delay="200">Toolkit</h1>
+              <h1 class="title text-one" data-aos="blend-safe-fade" data-aos-delay="300">Toolkit</h1>
             </div>
         <div class="toolkit-lists">
-          <p>
+          <p data-aos="blend-safe-fade">
             <strong>Skills:</strong>
             <br><br>UX Research 
             <br>Wireframing
@@ -101,7 +102,7 @@
             <br>Brand Design
             <br>Illustration 
           </p>
-          <p>
+          <p data-aos="blend-safe-fade">
             <strong>Tools:</strong>
             <br><br>Figma 
             <br>Adobe Illustrator, InDesign, Photoshop,<br> Lightroom, After Effects,  Premiere Pro
@@ -115,24 +116,24 @@
 
       <section>
         <div class="text-stack education-title">
-              <h1 class="title text-four">Education</h1>
-              <h1 class="title text-three">Education</h1>
-              <h1 class="title text-two">Education</h1>
-              <h1 class="title text-one">Education</h1>
+              <h1 class="title text-four" data-aos="blend-safe-fade">Education</h1>
+              <h1 class="title text-three" data-aos="blend-safe-fade" data-aos-delay="100">Education</h1>
+              <h1 class="title text-two" data-aos="blend-safe-fade" data-aos-delay="200">Education</h1>
+              <h1 class="title text-one" data-aos="blend-safe-fade" data-aos-delay="300">Education</h1>
             </div>
-        <p>
+        <p data-aos="blend-safe-fade">
           <strong>Bachelor of Communication Design @ Monash University</strong><br>UI/UX Specialization 2023-2025
         </p>
       </section>
 
       <section>
         <div class="text-stack referees-title">
-              <h1 class="title text-four">Referees</h1>
-              <h1 class="title text-three">Referees</h1>
-              <h1 class="title text-two">Referees</h1>
-              <h1 class="title text-one">Referees</h1>
+              <h1 class="title text-four" data-aos="blend-safe-fade">Referees</h1>
+              <h1 class="title text-three" data-aos="blend-safe-fade" data-aos-delay="100">Referees</h1>
+              <h1 class="title text-two" data-aos="blend-safe-fade" data-aos-delay="200">Referees</h1>
+              <h1 class="title text-one" data-aos="blend-safe-fade" data-aos-delay="300">Referees</h1>
             </div>
-        <p>
+        <p data-aos="blend-safe-fade">
           <strong>Person Name - Their Qualification</strong><br>Contact information here
           <br><br>
           <strong>Person Name - Their Qualification</strong><br>Contact information here
@@ -141,7 +142,7 @@
         </p>
       </section>
 
-      <footer>
+  <footer data-aos="blend-safe-fade">
     <div class="footer-container">
       <button class="top-footer-button">
         Back to top
@@ -157,5 +158,14 @@
     </div>
     <p>Site by Thomas Mathers 2025</p>
   </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 100,
+        });
+
+        window.addEventListener('scroll', AOS.refresh);
+      </script>
     </body>
 </html>

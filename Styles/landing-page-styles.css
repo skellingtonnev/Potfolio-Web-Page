@@ -5,7 +5,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  background: url("../Images/Landing Page/Landing Page Background.png") lightgray 50% / cover no-repeat;
+  background: url("../Images/Landing Page Background.jpg") lightgray 50% / cover no-repeat;
 }
 
 h1 {
@@ -38,6 +38,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   mix-blend-mode: hard-light;
+  isolation: isolate;
 }
 
 .text-two {
@@ -48,6 +49,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  isolation: isolate;
 }
 
 .text-three {
@@ -61,6 +63,7 @@ h1 {
   mix-blend-mode: hue;
   left: 5px;
   top: 3px;
+  isolation: isolate;
 }
 
 .text-four {
@@ -73,6 +76,7 @@ h1 {
   mix-blend-mode: multiply;
   left: 5px;
   top: 3px;
+  isolation: isolate;
 }
 
 h2 {
@@ -211,7 +215,9 @@ header {
   align-items: center;
   gap: 220px;
   margin-top: 70px;
+  margin-bottom: 5px;
 }
+
 
 .headers h1 {
   margin: 0;
@@ -370,6 +376,15 @@ footer {
   align-items: center;
   cursor: pointer;
   padding: 0;
+}
+
+[data-aos="blend-safe-fade"] {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+[data-aos="blend-safe-fade"].aos-animate {
+  opacity: 1;
 }
 
 /* === Extra Large Desktops (4K and up) === */

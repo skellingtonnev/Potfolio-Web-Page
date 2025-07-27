@@ -7,6 +7,7 @@
     <title>Thomas Mathers Portfolio</title>
     <link rel="stylesheet" href="Styles/ardrie-update-styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/qyt5ery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   </head>
   
   <body>
@@ -51,24 +52,24 @@
         <p class="value bottom-value">blank</p>
   </div>
       </div>
-        <img class="ardrie-image" src="Images/Landing Page/POR_ardriehero_r2.png">       
+        <img class="ardrie-image" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/POR_ardriehero_r2.png">       
       </div>
       <div class="text-stack">
-          <h1 class="title text-four">Ardrie Update</h1>
-          <h1 class="title text-three">Ardrie Update</h1>
-          <h1 class="title text-two">Ardrie Update</h1>
-          <h1 class="title text-one">Ardrie Update</h1>
+          <h1 class="title text-four" data-aos="blend-safe-fade">Ardrie Update</h1>
+          <h1 class="title text-three" data-aos="blend-safe-fade" data-aos-delay="100">Ardrie Update</h1>
+          <h1 class="title text-two" data-aos="blend-safe-fade" data-aos-delay="200">Ardrie Update</h1>
+          <h1 class="title text-one" data-aos="blend-safe-fade" data-aos-delay="300">Ardrie Update</h1>
         </div>
 
       <div class="subheading-stack">
-        <h2 class="subheading sub-three">A Feedback app for Ardrie Park</h2>
-        <h2 class="subheading sub-two">A Feedback app for Ardrie Park</h2>
-        <h2 class="subheading sub-one">A Feedback app for Ardrie Park</h2>
+        <h2 class="subheading sub-three" data-aos="blend-safe-fade" data-aos-delay="100">A Feedback app for Ardrie Park</h2>
+        <h2 class="subheading sub-two" data-aos="blend-safe-fade" data-aos-delay="200">A Feedback app for Ardrie Park</h2>
+        <h2 class="subheading sub-one" data-aos="blend-safe-fade" data-aos-delay="300">A Feedback app for Ardrie Park</h2>
       </div>      
     </header>
 
     <main>
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             Figma File
@@ -83,7 +84,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             Research
@@ -98,7 +99,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             Presentation
@@ -113,7 +114,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             User Prototype
@@ -128,7 +129,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             User Demo
@@ -143,7 +144,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             Client Prototype
@@ -158,7 +159,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             Client Demo
@@ -173,7 +174,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             Sign Prototype
@@ -188,7 +189,7 @@
         <div class="trial-bottom"></div>
       </div>
 
-      <div class="tab-container">
+      <div class="tab-container" data-aos="blend-safe-fade">
         <button class="tab">
           <span class="gradient-text">
             Sign Demo
@@ -205,7 +206,7 @@
       
     </main>
 
-    <footer>
+    <footer data-aos="blend-safe-fade">
     <div class="footer-container">
       <button class="top-footer-button">
         Back to top
@@ -221,6 +222,12 @@
     </div>
     <p class="footer-p">Site by Thomas Mathers 2025</p>
   </footer>
-  <script src="script.js"></script>
+      <script src="Project Info/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 100,
+        });
+      </script>
   </body>
 </html>
