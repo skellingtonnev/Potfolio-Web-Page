@@ -78,7 +78,7 @@ button {
   text-align: center;
   filter: saturate(1.6);
   margin-top: 0;
-  width: 100%;
+  width: 55%;
 }
 
 .text-one {
@@ -127,6 +127,7 @@ button {
   left: 50%;
   position: absolute;
   top: 0;
+  display: none;
 }
 
 .nav-text-container{
@@ -234,19 +235,8 @@ header{
 
 .sub-one{
   mix-blend-mode: overlay;
-  opacity: 0.2;
-  font-size: 26px;
-}
-
-.sub-two{
- 
-}
-
-.sub-three{
-  font-size: 30px;
-  mix-blend-mode: overlay;
   opacity: 0.1;
-  
+  font-size: 24px;
 }
 
 .dropdown-wrapper{

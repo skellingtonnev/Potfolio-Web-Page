@@ -77,6 +77,7 @@ h1 {
   left: 5px;
   top: 3px;
   isolation: isolate;
+  display: none;
 }
 
 h2 {
@@ -207,6 +208,8 @@ nav {
 
 .landing-image{
   width: 430px;
+  position: relative;
+  right: -10px;
 }
 
 header {
@@ -240,13 +243,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 285px;
+  gap: 265px;
 }
 
 .skills-icons {
   width: 350px;
   margin-top: 130px;
   filter: drop-shadow(1px 1px 0px #5549ff80) drop-shadow(-1px -1px 0px rgba(255, 72, 72, 0.5));
+  right: 40px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .subheading-stack{
@@ -257,6 +263,7 @@ header {
   align-items: center;
   margin-top: -50px;
   margin-bottom: 10px;
+  display: none;
 }
 
 .subheading{
@@ -285,8 +292,9 @@ header {
 }
 
 .featured-projects {
-  margin-top: 290px;
+  margin-top: 220px;
   text-align: center;
+  margin-bottom: 250px;
 }
 
 .featured-text-container {
@@ -315,6 +323,7 @@ header {
   align-items: flex-start;
   gap: 100px;
   position: relative;
+  margin-top: 110px;
 }
 
 .project-window {
@@ -340,7 +349,7 @@ header {
 }
 
 footer {
-  margin-top: 150px;
+  margin-top: 0;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -348,7 +357,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  margin: 50px 100px 50px 100px;
+  margin: 0 100px 50px 100px;
 }
 
 .footer-icons-container {
@@ -405,7 +414,7 @@ h2{
 }
 
 header{
- gap: 260px;
+ gap: 350px;
 }
   
 .landing-image{
@@ -421,18 +430,23 @@ header{
 }
 
 .skills-content{
-  gap: 330px;
+  gap: 420px;
   padding-right: 20px;
   margin-bottom: 230px;
 }
 
 .skills-text{
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .skills-icons{
-  margin-top: 170px;
-  width: 420px;
+  margin-top: 220px;
+  width: 450px;
+  right: 40px;
+}
+
+.featured-projects{
+  margin-top: 0;
 }
 
 .featured-text-stack{
@@ -449,7 +463,7 @@ header{
 }
 
 .footer-container{
-  margin-top: 300px;
+  margin-top: 280px;
 }
 
 
@@ -459,10 +473,10 @@ header{
 /* No media query needed – default styles go here */
 
 /* === Medium Desktops / Small Laptops === */
-@media (max-width: 1107px) {
+@media (max-width: 1190px) {
   .skills-content{
     gap: 200px;
-    margin-bottom: 150px;
+    margin-bottom: 0;
   }
 
  .skills-icons{
@@ -474,10 +488,6 @@ header{
  .footer-container{
   margin-top: 200px;
  }
-}
-
-/* === Tablets (portrait & landscape) === */
-@media (max-width: 1107px) {
 
   button{
     width: 149.63px;     /* 175 * 0.855 */
@@ -494,7 +504,7 @@ header{
   }
 
   header{
-    gap: 125px;
+    gap: 190px;
   }
 
   .landing-title{
@@ -507,10 +517,11 @@ header{
 
   .landing-image{
     width: 375px;
+    right: -15px;
   }
 
   .skills-content{
-    gap: 90px;
+    gap: 165px;
   }
 
   .skills-header{
@@ -523,7 +534,7 @@ header{
 
   .skills-icons{
     width: 350px;
-    padding-right: 40px;
+    right: -30px;
   }
 
   .project-list{
@@ -535,12 +546,12 @@ header{
   }
 
   .featured-projects{
-    margin-top: 260px;
+    margin-top: 240px;
   }
 }
 
 /* === Mobile Landscape / Phablets === */
-@media (max-width: 977px) {
+@media (max-width: 1045px) {
 
   button{
     width: 126px;        /* 175 * 0.72 */
@@ -557,7 +568,7 @@ header{
   }
 
   header{
-    gap: 65px;
+    gap: 115px;
   }
 
   .landing-title{
@@ -565,7 +576,7 @@ header{
   }
 
   .landing-image{
-    width: 280px;
+    width: 315px;
     padding-bottom: 15px;
   }
 
@@ -582,8 +593,14 @@ header{
   }
 
   .skills-icons{
-    width: 260px;
-    padding-right: 10px;
+    width: 330px;
+    right: -60px;
+    margin-top: 120px;
+  }
+
+  .featured-projects{
+    margin-top: 210px;
+    margin-bottom: 200px;
   }
 
   .featured-text-container{
@@ -592,11 +609,16 @@ header{
 
   .project-list{
     gap: 10px;
+    margin-top: 80px;
   }
 
   .project-image-container{
     height: 120px;
     margin-bottom: 50px;
+  }
+
+  .footer-container{
+    margin-top: 0;
   }
 
   .footer-icon{
@@ -615,15 +637,21 @@ header{
 }
 
 /* === Mobile Portrait === */
-@media (max-width: 765px) {
+@media (max-width: 875px) {
+  .text-stack{
+    margin-left: 10px;
+  }
+
   header{
     flex-direction: column;
     align-items: center;
+    gap: 60px;
   }
 
   .landing-image{
     order: 1;
-    width: 250px;
+    width: 375px;
+    padding-right: 20px;
   }
 
   .landing-title{
@@ -660,12 +688,17 @@ header{
     margin-bottom: 0px;
   }
 
+  .skills-header{
+    margin-bottom: 80px;
+  }
+
   .skills-icons{
     display: none;
   }
 
   .featured-projects{
-    margin-top: 240px;
+    margin-top: 145px;
+    margin-bottom: 145px;
   }
 
   .project-list{
@@ -692,26 +725,38 @@ header{
 
 
 /* === Tiny Devices === */
-@media (max-width: 470px) {
+@media (max-width: 600px) {
   .navbar-logo{
-    display: none;
+    padding-left: 10px;
   }
 
   .navbar-links {
-    justify-content: flex-start;
-    gap: 50px;
+    padding-right: 0;
+    gap: 60px;
   }
 
   h1{
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .text-stack{
     height: 45px;
   }
 
+  .landing-image{
+    width: 300px;
+  }
+
   .skills-header{
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+  }
+
+  .featured-text-container{
+    margin-bottom: 0;  
+  }
+
+  .project-list{
+    margin-top: 50px;
   }
 
   .view-my-work{
@@ -733,5 +778,47 @@ header{
 
   .top-footer-button{
     align-self: center;
+  }
+}
+
+@media (max-width: 500px){
+  nav{
+    padding: 0;
+  }
+
+  .navbar-logo{
+    width: 50px;
+  }
+
+  .landing-image{
+    width: 215px;
+  }
+
+  .navbar-links{
+    gap: 25px;
+    position: relative;
+    left: -20px;
+  }
+
+  .nav-text-container{
+    font-size: 18px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  p{
+    font-size: 13px;
+  }
+
+  header{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 380px){
+  h1{
+    font-size: 32px;
   }
 }

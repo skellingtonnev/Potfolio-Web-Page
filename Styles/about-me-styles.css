@@ -141,8 +141,6 @@ nav {
 
 .title {
   position: absolute;
-  top: -2x;
-  right: 0.2%;
   margin-bottom: 100px;
   filter: saturate(1.6);
   width: 100%;
@@ -191,6 +189,7 @@ nav {
   mix-blend-mode: multiply;
   left: 5px;
   top: 3px;
+  display: none;
 }
 
 header{
