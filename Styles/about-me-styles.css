@@ -46,6 +46,7 @@ button {
   align-self: flex-start;
   color: #350072;
   filter: drop-shadow(1px 1px 0px #5549ff80) drop-shadow(-1px -1px 0px rgba(255, 72, 72, 0.5));
+  cursor: pointer;
 }
 
 section{

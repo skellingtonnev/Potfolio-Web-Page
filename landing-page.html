@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thomas Mathers Portfolio</title>
+  <title>Thomas Mathers Design</title>
+  <link rel="icon" type="image/png" href="Images/Landing Page/POR_smiling_hero_transparent.png">
   <link rel="stylesheet" href="Styles/landing-page-styles.css">
   <link rel="stylesheet" href="https://use.typekit.net/qyt5ery.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
@@ -13,7 +14,7 @@
   <nav>
     <img class="navbar-logo" src="Images/Landing Page/POR_smiling_hero_transparent.png">
     <div class="navbar-links">
-      <a href="#">
+      <a href="about-me.html">
         <div class="nav-text-container about">
           <span class="navtext nav-one">About</span>
           <span class="navtext nav-two">About</span>
@@ -27,7 +28,7 @@
           <span class="navtext nav-three">Work</span>
         </div>
       </a>
-      <a href="#">
+      <a href="https://linktr.ee/thomas_mathers" target="_blank">
         <div class="nav-text-container">
           <span class="navtext nav-one">Contact</span>
           <span class="navtext nav-two">Contact</span>
@@ -55,32 +56,12 @@
         </div>
       </div>
       <p class="open-sentence" class="landing-image" data-aos="blend-safe-fade" data-aos-delay="300">I'm a designer in my final year studying at<br>Monash University!</p>
-      <button class="work-button" class="landing-image" data-aos="blend-safe-fade" data-aos-delay="300">View my work</button>
+      <button class="work-button" class="landing-image" id="viewMyWork" data-aos="blend-safe-fade" data-aos-delay="300">View my work</button>
     </div>
     <img class="landing-image" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/POR_smiling_hero_transparent.png">
   </header>
 
   <main>
-    <section class="skills">
-      <div class="skills-content">
-        <div class="skills-description">
-          <h1 class="skills-header">
-            <div class="text-stack">
-              <h1 class="title text-four" data-aos="blend-safe-fade">My Skills</h1>
-              <h1 class="title text-three" data-aos="blend-safe-fade" data-aos-delay="100">My Skills</h1>
-              <h1 class="title text-two" data-aos="blend-safe-fade" data-aos-delay="200">My Skills</h1>
-              <h1 class="title text-one" data-aos="blend-safe-fade" data-aos-delay="300">My Skills</h1>
-            </div>
-          </h1>
-          <p class="skills-text" class="landing-image" data-aos="blend-safe-fade" data-aos-delay="300">
-            I understand the importance of conducting<br>thorough research to design seamless <br>user experiences.
-            <br><br>
-            I am proficient in various software related to<br>graphic and interaction design <strong>(view the full list<br class="problem-br"><u>here</u>),</strong> and have experience coding with<br>HTML/CSS and Javascript.
-          </p>
-        </div>
-        <img class="skills-icons" class="landing-image" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/skillsicons.png">
-      </div>
-    </section>
 
     <section class="featured-projects">
       <div class="subheading-stack">
@@ -102,38 +83,47 @@
           <div class="project-image-container">
             <img class="project-image" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/Ardrie icon.png">
           </div>
-          <button data-aos="blend-safe-fade" data-aos-delay="300">Ardrie Update</button>
+          <a href="https://youtu.be/ANd-t5uRoWU" target="_blank"><button data-aos="blend-safe-fade" data-aos-delay="300">Ardrie Update</button></a>
         </div>
 
         <div class="project-window">
           <div class="project-image-container">
-            <img class="project-image image-one" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/Solaris Icon.png">
+            <img class="project-image" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/netpal-image.png">
           </div>
-          <button data-aos="blend-safe-fade" data-aos-delay="300">Solaris</button>
+          <a href="https://youtu.be/ShzkuW3spK8" target="_blank"><button data-aos="blend-safe-fade" data-aos-delay="300">NetPal</button></a>
         </div>
 
         <div class="project-window">
           <div class="project-image-container">
             <img class="project-image" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/Memphis Tours Icon.png">
           </div>
-          <button data-aos="blend-safe-fade" data-aos-delay="300">Memphis Tours</button>
+          <a href="https://drive.google.com/drive/folders/1Vhx_23mbJWz6oFou4ELqH18F44ji1_n7" target="_blank"><button data-aos="blend-safe-fade" data-aos-delay="300">Memphis Tours</button></a>
         </div>
+
+        <div class="project-window">
+          <div class="project-image-container">
+            <img class="project-image" data-aos="blend-safe-fade" data-aos-delay="300" src="Images/Landing Page/tripcoach-image.png">
+          </div>
+          <a href="https://youtu.be/Xvgcc5RgmLM" target="_blank"><button data-aos="blend-safe-fade" data-aos-delay="300">TripCoach</button></a>
+        </div>
+
+        
       </div>
     </section>
   </main>
 
   <footer data-aos="blend-safe-fade">
     <div class="footer-container">
-      <button class="top-footer-button">
+      <button class="top-footer-button" id="toTopBtn">
         Back to top
       </button>
       <div class="footer-icons-container">
-        <button class="icon-button">
+        <a href="mailto:tommath03@gmail.com" target="_blank"><button class="icon-button">
           <img class="footer-icon" src="Images/Landing Page/emailicon.png">
-        </button>
-        <button class="icon-button">
+        </button></a>
+        <a href="https://www.linkedin.com/in/tom-mathers-53842b26a/" target="_blank"><button class="icon-button">
           <img class="footer-icon linkedin" src="Images/Landing Page/linkedinicon.png">
-        </button>
+        </button></a>
       </div>
     </div>
     <p>Site by Thomas Mathers 2025</p>
@@ -148,3 +138,19 @@
       </script>
 </body>
 </html>
+
+<script>
+  document.getElementById("toTopBtn").addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  document.getElementById("viewMyWork").addEventListener("click", () => {
+    window.scrollTo({
+      top: 650,
+      behavior: "smooth"
+    });
+  });
+</script>

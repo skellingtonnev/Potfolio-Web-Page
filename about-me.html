@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Mathers Portfolio</title>
+    <title>About Me</title>
+    <link rel="icon" type="image/png" href="Images/Landing Page/POR_smiling_hero_transparent.png">
     <link rel="stylesheet" href="Styles/about-me-styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/qyt5ery.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
@@ -12,7 +13,7 @@
 
     <body>
        <nav>
-    <img class="navbar-logo" src="Images/Landing Page/POR_smiling_hero_transparent.png">
+    <a href="landing-page.html"><img class="navbar-logo" src="Images/Landing Page/POR_smiling_hero_transparent.png"></a>
     <div class="navbar-links">
       <a href="#">
         <div class="nav-text-container about">
@@ -21,14 +22,14 @@
           <span class="navtext nav-three">About</span>
         </div>
       </a>
-      <a href="#">
+      <a href="landing-page.html">
         <div class="nav-text-container">
           <span class="navtext nav-one">Work</span>
           <span class="navtext nav-two">Work</span>
           <span class="navtext nav-three">Work</span>
         </div>
       </a>
-      <a href="#">
+      <a href="https://linktr.ee/thomas_mathers" target="_blank">
         <div class="nav-text-container">
           <span class="navtext nav-one">Contact</span>
           <span class="navtext nav-two">Contact</span>
@@ -126,34 +127,18 @@
         </p>
       </section>
 
-      <section>
-        <div class="text-stack referees-title">
-              <h1 class="title text-four" data-aos="blend-safe-fade">Referees</h1>
-              <h1 class="title text-three" data-aos="blend-safe-fade" data-aos-delay="100">Referees</h1>
-              <h1 class="title text-two" data-aos="blend-safe-fade" data-aos-delay="200">Referees</h1>
-              <h1 class="title text-one" data-aos="blend-safe-fade" data-aos-delay="300">Referees</h1>
-            </div>
-        <p data-aos="blend-safe-fade">
-          <strong>Person Name - Their Qualification</strong><br>Contact information here
-          <br><br>
-          <strong>Person Name - Their Qualification</strong><br>Contact information here
-          <br><br>
-          <strong>Person Name - Their Qualification</strong><br>Contact information here
-        </p>
-      </section>
-
   <footer data-aos="blend-safe-fade">
     <div class="footer-container">
-      <button class="top-footer-button">
+      <button class="top-footer-button" id="toTopBtn">
         Back to top
       </button>
       <div class="footer-icons-container">
-        <button class="icon-button">
+        <a href="mailto:tommath03@gmail.com" target="_blank"><button class="icon-button">
           <img class="footer-icon" src="Images/Landing Page/emailicon.png">
-        </button>
-        <button class="icon-button">
+        </button></a>
+        <a href="https://www.linkedin.com/in/tom-mathers-53842b26a/" target="_blank"><button class="icon-button">
           <img class="footer-icon linkedin" src="Images/Landing Page/linkedinicon.png">
-        </button>
+        </button></a>
       </div>
     </div>
     <p>Site by Thomas Mathers 2025</p>
@@ -169,3 +154,12 @@
       </script>
     </body>
 </html>
+
+<script>
+  document.getElementById("toTopBtn").addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>

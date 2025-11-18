@@ -8,6 +8,11 @@ body {
   background: url("../Images/Landing Page Background.jpg") lightgray 50% / cover no-repeat;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   font-family: "dystopian", sans-serif;
   font-weight: 900;
@@ -114,6 +119,7 @@ button {
   align-self: flex-start;
   color: #350072;
   filter: drop-shadow(1px 1px 0px #5549ff80) drop-shadow(-1px -1px 0px rgba(255, 72, 72, 0.5));
+  cursor: pointer;
 }
 
 .nav-text-container{
@@ -292,7 +298,7 @@ header {
 }
 
 .featured-projects {
-  margin-top: 220px;
+  margin-top: 180px;
   text-align: center;
   margin-bottom: 250px;
 }
@@ -324,6 +330,7 @@ header {
   gap: 100px;
   position: relative;
   margin-top: 110px;
+  flex-wrap: wrap;
 }
 
 .project-window {
